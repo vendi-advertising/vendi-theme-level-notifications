@@ -16,7 +16,7 @@ define( 'VENDI_NOTIFICATIONS_URL',  plugin_dir_url( __FILE__ ) );
 
 /**
  * Register a page-level notice for display later.
- * 
+ *
  * @param  string  $message            The message to display.
  * @param  string  $type               One of success, warning, error, info.
  * @param  boolean $dismissable        If true, show an "x" that users can click to hide the notice. Default true.
@@ -95,24 +95,24 @@ function vendi_notifications_show_notices( $echo = true, $reset = true )
 
 function vendi_notifications_register_plugin_css( $file, $media = 'all' )
 {
-    wp_enqueue_style(   
+    wp_enqueue_style(
                         basename( $file, '.css' ),
                         plugins_url( '/css/' . $file, VENDI_NOTIFICATIONS_FILE ),
                         null,
                         filemtime( VENDI_NOTIFICATIONS_PATH . '/css/' . $file ),
                         $media
                     );
-    
+
 }
 
 function vendi_notifications_register_plugin_js( $file, $footer = true )
 {
-    wp_enqueue_script(   
+    wp_enqueue_script(
                         basename( $file, '.js' ),
                         plugins_url( '/js/' . $file, VENDI_NOTIFICATIONS_FILE ),
                         false,
                         filemtime( VENDI_NOTIFICATIONS_PATH . '/js/' . $file ),
                         $footer
                     );
-    
+
 }
