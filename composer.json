@@ -1,0 +1,23 @@
+{
+    "name": "vendi-advertising/vendi-theme-level-notifications",
+    "type": "library",
+    "description" : "Vendi WP Theme-Level Notifications",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Haas",
+            "email": "chris@vendiadvertising.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3",
+        "phpro/grumphp": "*",
+        "friendsofphp/php-cs-fixer": "^2.7"
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}
